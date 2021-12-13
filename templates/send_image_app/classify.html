@@ -1,0 +1,12 @@
+{% extends 'send_image_app/base.html' %}
+{% block content %}
+
+<div class="container">
+  <img class="prob_img" src="{{ img_url }}" alt="">
+  <h4 class="label">推論結果：{{ result_list.animal_name }}</h4>
+  <h4 class="proba">信頼度：{{ result_list.proba }}</h4>
+  <button type=“button” style="background-color: #00b9f1;">
+    <a href="{% url 'imageupload' %}" style="color:#fff;">戻る</a>
+  </button>
+</div>
+{% endblock %}
