@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-import debug_toolbar
+# import debug_toolbar
 from . import settings
 
 urlpatterns = [
@@ -23,5 +23,5 @@ urlpatterns = [
     path('', include('send_image_app.urls'))
 ]
 
-if settings.DEBUG:
-    urlpatterns += [path('__debug__/', include(debug_toolbar.urls))]
+# if settings.DEBUG:
+#     urlpatterns += [path('__debug__/', include(debug_toolbar.urls))]
