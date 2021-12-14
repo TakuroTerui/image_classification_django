@@ -1,1 +1,1 @@
-web: gunicorn helloworldproject.wsgi
+web: gunicorn send_image_pj.wsgi
