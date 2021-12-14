@@ -49,9 +49,9 @@ tensorboard-plugin-wit==1.8.0
 threadpoolctl==3.0.0
 --find-links https://download.pytorch.org/whl/torch_stable.html
 torch==1.10.0+cpu
+torchvision==0.11.1+cpu
 # torchmetrics==0.6.1
 # http://download.pytorch.org/whl/cpu/torch-0.4.1-cp39-cp39m-linux_x86_64.whl
-# torchvision==0.11.1
 tqdm==4.62.3
 typing_extensions==4.0.1
 urllib3==1.26.7
