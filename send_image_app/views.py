@@ -70,10 +70,6 @@ label = {
 }
 
 @login_required
-def hellofunction(request):
-  return HttpResponse('Hello World!')
-
-@login_required
 def image_upload(request):
   if request.method == 'POST':
     form = ImageForm(request.POST, request.FILES)
