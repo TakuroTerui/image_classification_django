@@ -97,14 +97,14 @@ def signup(request):
     if form.is_valid():
       form.save()
       username = form.cleaned_data.get('username')
-      password = form.cleaned_data.get('password')
+      password = form.cleaned_data.get('password1')
       new_user = authenticate(username=username, password=password)
       if new_user is not None:
         login(request, new_user)
-        return redirect('index')
+        return redirect('image/')
   else:
     form = SignUpForm()
-    return render(request, 'send_image_app/signup.html', {'form':form})
+  return render(request, 'send_image_app/signup.html', {'form':form})
   
 # 推論処理
 def inference(img_url):
